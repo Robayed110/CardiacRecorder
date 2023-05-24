@@ -215,7 +215,7 @@
         android:layout_height="wrap_content"
         android:text="Admin"
         android:textStyle="bold"
-        android:textColor="#F30D0D"
+        android:textColor="#F11B1B"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/btnfacebook"
         app:layout_constraintEnd_toEndOf="@+id/btnfacebook"
