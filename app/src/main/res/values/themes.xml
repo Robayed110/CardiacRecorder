@@ -7,10 +7,10 @@
         <item name="colorPrimaryVariant">#1BEE14</item>
         <item name="colorOnPrimary">#FDF7F7</item>
 
-
         <item name="colorSecondary">#17C5DC</item>
         <item name="colorSecondaryVariant">#FF018786</item>
         <item name="colorOnSecondary">@color/white</item>
+
     </style>
 
     <style name="Theme.CardiacRecorder" parent="Base.Theme.CardiacRecorder" />
