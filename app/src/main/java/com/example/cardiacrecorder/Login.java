@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class Login extends AppCompatActivity {
 
+    public static String PREFS_NAME="MyPrefsFile";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
