@@ -8,6 +8,9 @@ A Cardiac Recorder is an android application that records and manages health dat
 * To monitor all records
 
 
-## UML Design
-* Screenshoots will be added
+# UML Diagram
+
+UML Diagram of Cardiac Recorder
+
+![UML](https://github.com/Robayed110/CardiacRecorder/blob/master/App_Images/UML_pic_01.jpeg)
 
