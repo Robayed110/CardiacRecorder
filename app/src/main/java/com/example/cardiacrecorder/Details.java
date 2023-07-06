@@ -37,6 +37,11 @@ public class Details extends AppCompatActivity {
         time.setText(intent.getStringExtra("time"));
         comment.setText("good");
 
+        /**
+         * OnClickListener for the edit button. It starts the Edit activity to allow
+         * editing of the pressure data.
+         */
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +53,12 @@ public class Details extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        /**
+         * OnClickListener for the delete button. It removes the pressure data from
+         * the Firebase Realtime Database.
+         */
+
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +84,10 @@ public class Details extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Initialize the views used in the activity.
+     */
 
     private void initView() {
         s_pressure=findViewById(R.id.systolic1);

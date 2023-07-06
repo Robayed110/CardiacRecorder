@@ -114,6 +114,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Set up the RecyclerView and populate it with pressure data from the Firebase Realtime Database.
+     */
+
     private void recyclerViewList() {
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         recyclerViewList =findViewById(R.id.recyclerView);
@@ -154,6 +158,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Set up the bottom navigation bar functionality.
+     */
 
     private void bottomNavigation(){
         FloatingActionButton floatingActionButton=findViewById(R.id.fac);

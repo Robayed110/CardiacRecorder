@@ -37,12 +37,22 @@ public class Login extends AppCompatActivity {
         TextView admin=findViewById(R.id.admin);
         Button login=findViewById(R.id.login);
         TextView btn2=findViewById(R.id.fgtpassword);
+
+        /**
+         * OnClickListener for the "Forgot Password?" link. It starts the Passwordreset activity.
+         */
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Login.this,Passwordreset.class));
             }
         });
+
+        /**
+         * OnClickListener for the login button. It performs user authentication by checking the
+         * entered username, password, and mobile number against the Firebase Realtime Database.
+         */
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

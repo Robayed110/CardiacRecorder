@@ -35,6 +35,11 @@ public class Edit extends AppCompatActivity {
         String n1=getIntent().getStringExtra("var");
 
 
+        /**
+         * OnClickListener for the update button. It updates the systolic and diastolic
+         * pressures of the selected pressure data in the Firebase Realtime Database.
+         */
+
         //key1.setText(intent.getStringExtra("key"));
         //String keyString = key1.getText().toString();
 
