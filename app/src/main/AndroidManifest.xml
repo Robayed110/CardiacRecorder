@@ -13,16 +13,39 @@
         android:theme="@style/Theme.CardiacRecorder"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-=======
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Edit"
+            android:exported="false" />
+        <activity
+            android:name=".Details"
+            android:exported="false" />
+        <activity
+            android:name=".Passwordreset"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
->>>>>>> 6088206213db138b93beed7394a2a376685b3f48
             android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Add"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TestLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
