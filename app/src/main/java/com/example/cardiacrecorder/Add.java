@@ -18,6 +18,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+/**
+ * Activity for adding pressure data to the Firebase Realtime Database.
+ */
 public class Add extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference pressureDataRef = database.getReference("pressureData");
@@ -34,6 +37,11 @@ public class Add extends AppCompatActivity {
         dp=findViewById(R.id.dp1);
         addBtn=findViewById(R.id.add2);
 
+        /**
+         * OnClickListener for the addBtn. It retrieves the systolic and diastolic pressures
+         * from the EditText fields, creates a PressureData object, and saves it to the
+         * Firebase Realtime Database.
+         */
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
