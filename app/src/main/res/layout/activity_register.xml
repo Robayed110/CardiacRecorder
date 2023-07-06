@@ -19,7 +19,7 @@
 
         android:ems="10"
         android:hint="address"
-        android:textColorHint="#ACA9A9"
+        android:textColorHint="#C1C0C0"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
