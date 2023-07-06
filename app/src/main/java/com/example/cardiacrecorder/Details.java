@@ -35,7 +35,23 @@ public class Details extends AppCompatActivity {
         di_pressure.setText(intent.getStringExtra("diastolic_pressure"));
         date.setText(intent.getStringExtra("date"));
         time.setText(intent.getStringExtra("time"));
-        comment.setText("good");
+        String systolicPressureString = intent.getStringExtra("systolic_pressure");
+        String diastolicPressureString = intent.getStringExtra("diastolic_pressure");
+
+// Convert systolic pressure to integer
+        int systolicPressure = Integer.parseInt(systolicPressureString);
+
+// Convert diastolic pressure to integer
+        int diastolicPressure = Integer.parseInt(diastolicPressureString);
+
+        if(systolicPressure>=110 && systolicPressure<=130 && diastolicPressure>=70 && diastolicPressure<=90){
+            comment.setText("Good Health.");
+        }
+        else {
+            comment.setText("Concerning!!!");
+        }
+
+
 
         /**
          * OnClickListener for the edit button. It starts the Edit activity to allow
