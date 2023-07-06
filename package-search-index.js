@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.cardiacrecorder"},{"l":"com.example.cardiacrecorder.Adaptor"},{"l":"com.example.cardiacrecorder.Domain"}];updateSearchResults();
