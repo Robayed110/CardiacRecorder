@@ -81,6 +81,24 @@ public class UnitTest {
         assertFalse(dataList.getData().contains(listDomain1));
     }
 
+    @Test
+    public void testUpdateData() {
+        Newclass dataList = new Newclass();
+
+        // Create the initial data
+
+        ListDomain existdetails = listDomain;
+        dataList.addData(existdetails);
+
+        // Create the updated data
+        ListDomain updatedDetails = listDomain1;
+        // Update the data
+        dataList.updateData(updatedDetails,existdetails);
+        // Assert that the data was updated correctly
+        assertTrue(dataList.getData().contains(updatedDetails));
+        assertFalse(dataList.getData().contains(existdetails));
+    }
+
     /**
      * testing addData method for exceptions
      */

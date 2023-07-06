@@ -1,6 +1,7 @@
 package com.example.cardiacrecorder;
 
 import com.example.cardiacrecorder.Domain.ListDomain;
+import com.google.firebase.auth.FirebaseUserMetadata;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,24 @@ public class Newclass {
     {
         List<ListDomain> dataList = records;
         return dataList;
+    }
+
+
+    /**
+     * this method for update of list
+     */
+
+    public void updateData(ListDomain updatedData,ListDomain existdata) {
+        // Check if the updated data exists in the records list
+        if (records.contains(existdata)) {
+            // Get the index of the updated data
+            int index = records.indexOf(existdata);
+            // Replace the old data with the updated data at the same index
+            records.set(index, updatedData);
+        } else {
+            // Throw an exception if the updated data is not found in the records list
+            throw new IllegalArgumentException("Data not found");
+        }
     }
 
     /**
