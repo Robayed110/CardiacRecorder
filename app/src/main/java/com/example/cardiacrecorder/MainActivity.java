@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         prs=findViewById(R.id.person);
         add=findViewById(R.id.addNew);
         String n1=getIntent().getStringExtra("var");
+
         databaseReference.child("userinfo").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
