@@ -29,7 +29,11 @@ public class Details extends AppCompatActivity {
         Intent intent = getIntent();
         //object = (ListDomain) getIntent().getSerializableExtra("object");
         //key.setText(intent.getStringExtra("key"));
-        String key2 = intent.getStringExtra("key");
+        String key3 = intent.getStringExtra("key");
+        if(key3==null){
+            key3="NZdY0wNZCZW3Fk1FsJU";
+        }
+        String key2 = key3;
         //key.setText(key2);
         s_pressure.setText(intent.getStringExtra("systolic_pressure"));
         di_pressure.setText(intent.getStringExtra("diastolic_pressure"));
@@ -39,17 +43,19 @@ public class Details extends AppCompatActivity {
         String diastolicPressureString = intent.getStringExtra("diastolic_pressure");
 
 // Convert systolic pressure to integer
-        int systolicPressure = Integer.parseInt(systolicPressureString);
+//        int systolicPressure = Integer.parseInt(systolicPressureString);
+//
+//// Convert diastolic pressure to integer
+//        int diastolicPressure = Integer.parseInt(diastolicPressureString);
+//
+//        if(systolicPressure>=110 && systolicPressure<=130 && diastolicPressure>=70 && diastolicPressure<=90){
+//            comment.setText("Good Health.");
+//        }
+//        else {
+//            comment.setText("Concerning!!!");
+//        }
+        comment.setText("Concerning!!!");
 
-// Convert diastolic pressure to integer
-        int diastolicPressure = Integer.parseInt(diastolicPressureString);
-
-        if(systolicPressure>=110 && systolicPressure<=130 && diastolicPressure>=70 && diastolicPressure<=90){
-            comment.setText("Good Health.");
-        }
-        else {
-            comment.setText("Concerning!!!");
-        }
 
 
 
